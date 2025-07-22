@@ -1,0 +1,2 @@
+# Bill_analyzer
+Bill Analyzer is a Streamlit web-app that turns piles of invoices, receipts, and fee slips into structured data you can search, sort, and analyse — all offline, on Windows, macOS, or Linux.  Page	What it shows Upload	Drag-and-drop PNG / JPEG / PDF / TXT receipts. OCR is run locally; totals, vendor, date & currency are auto-detected. Records	Live table (sortable & searchable) of every parsed receipt. Includes an 🗑️ Delete faulty rows button. Insights	Monthly spend totals, currency breakdowns, and other quick stats (powered by Pandas).

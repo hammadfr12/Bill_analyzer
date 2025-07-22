@@ -1,0 +1,22 @@
+# Core App
+streamlit==1.35.0
+
+# Data & Validation
+pandas==2.2.2
+pydantic==2.7.0
+sqlalchemy==2.0.30
+
+# OCR
+pytesseract==0.3.10
+pdf2image==1.17.0
+pillow==10.4.0
+
+# Currency detection and formatting
+babel==2.15.0
+forex-python==1.8
+
+# Charts
+matplotlib==3.9.0
+
+# System utils
+typing-extensions>=4.7.1

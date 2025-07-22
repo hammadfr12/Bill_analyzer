@@ -1,0 +1,16 @@
+# ─── Python / Streamlit ──────────────────────────────
+__pycache__/
+*.py[cod]
+*.log
+.venv/
+
+# ─── OS misc ─────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Project data ────────────────────────────────────
+data/                 # uploaded files & receipts.db
+*.db
+
+# ─── IDE configs ─────────────────────────────────────
+.vscode/

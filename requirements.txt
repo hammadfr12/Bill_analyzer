@@ -20,3 +20,10 @@ matplotlib==3.9.0
 
 # System utils
 typing-extensions>=4.7.1
+streamlit
+SQLAlchemy
+pandas
+pytesseract
+pdf2image
+babel
+forex-python

@@ -1,18 +1,22 @@
-﻿# Use a slim Python base
 FROM python:3.10-slim
 
-# Set working directory
+# Install system dependencies for OCR & PDF
+RUN apt-get update \  
+ && apt-get install -y --no-install-recommends \
+      tesseract-ocr \
+      poppler-utils \
+ && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
 
-# Install dependencies
+# Python deps
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code
+# Copy app code
 COPY . .
 
-# Expose Streamlit port
-EXPOSE 3000
+EXPOSE 8501
 
-# Launch Streamlit
-CMD ["streamlit", "run", "app/main.py", "--server.port", "3000", "--server.address", "0.0.0.0"]
+# Run Streamlit
+CMD ["streamlit", "run", "app/main.py", "--server.port", "8501", "--server.address", "0.0.0.0"]
